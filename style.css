@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(54, 54, 54);
+} 
+
+header {
+    background: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.nav_menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu_link {
+    margin-right: 12px;
+}
+
+.nav_menu_link a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_menu_link a:hover{
+    color: #16f0ec;
+    transition: 0.4s;
+}
+
+.burger {
+    display: none;
+}
+
+.burger svg {
+    stroke: black;
+    width: 20px;
+    height: 20px;
+}
+
+.close {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 340px;
+        background-color: white;
+        display: flex;
+        align-items:flex-end;
+        justify-content: start;
+        transform: translateX(-100%);
+        display: none;
+        transition: 0.3s transform ease-in-out;
+    }
+    .nav.open {
+        transform: initial;
+        display: flex;
+    }
+    .nav_menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: calc(100% - 60px);
+        margin-left: 23px;
+    }
+    .nav_menu_link {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .close {
+        display: block;
+        cursor: pointer;
+    }
+    .close svg {
+        stroke: black;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 24px;
+        left: 20px;
+    }
+}
+
+.text {
+    color: white;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background: url(https://buddytherobot.com/wp-content/uploads/2018/10/BG_TrustUs.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box_one {
+    background: rgb(54, 54, 54);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_bar {
+    background: #16f0ec;
+    height: 50px;
+    width: 5px;
+    margin-left: 10px;
+}
+
+.box_one h1 {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    height: 500px;
+}
+
+.box_pre_two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.second_bar {
+    background: #16f0ec;
+    height: 70px;
+    width: 5px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.box_two_h2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box_two {
+    background: rgb(54, 54, 54);
+    width: 100%;
+    height: 500px;
+}
+
+.box_pre_three {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.box_two_first {
+    margin-left: 80px;
+    width: 350px;
+    height: 500px;
+    color: white;
+}
+
+.text_one {
+    display: flex;
+    justify-content: center;
+}
+
+.third_bar {
+    background: #16f0ec;
+    height: 50px;
+    width: 5px;
+    margin-left: 10px;
+}
+
+.box_three_h3 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.box_three {
+    width: 100%;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+
+.all_img {
+    display: flex;
+    margin-left: 40px;
+}
+
+.img_one {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px; 
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img_one img {
+    margin-top: 50px;
+}
+
+.img_one p {
+    margin-top: 100px;
+    color: white;
+    font-size: 10px;
+}
+
+.img_two {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px; 
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+.img_two img {
+    margin-top: 50px;
+}
+
+.img_two p {
+    margin-top: 100px;
+    color: white;
+    font-size: 10px;
+}
+
+.first_img  img{
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.first_img {
+    display: flex;
+    justify-content: center;
+}
+
+.img_three {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px; 
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+.img_three img {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.img_three p {
+    margin-top: 100px;
+    color: white;
+    font-size: 10px;
+}
+
+.box_four {
+    background: #0fc7c4;
+    width: 100%;
+}
+
+.box_four p {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 100px;
+}
+
+.box_four p.contact {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    font-size: 12px;
+    cursor: pointer;    
+    border-style: solid;
+    border-color: rgb(36, 36, 36);
+    border-width: 1px;
+    background: rgb(36, 36, 36);
+    margin-right: 850px;
+    margin-left: 850px;
+}
+
+.box_four p.contact:hover {
+    border-color: white;
+}
+
+footer {
+    background: rgb(22, 22, 22);
+    width: 100%;
+}
+.footer_one {
+    background: rgb(54, 54, 54);
+    width: 100%;
+    height: calc(100vh - 80vh);
+}
+
+.logo_buddy img {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 1300px;
+    align-items: center;
+}
+
+footer p {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    height: 20px;
+    font-size: 12px;
+}
